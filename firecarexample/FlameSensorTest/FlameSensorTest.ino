@@ -17,7 +17,8 @@ void setup() {
 }
 void loop() {
   // read the sensor on analog A0:
-	int sensorReading = analogRead(A0);
+	int sensorReading = analogRead(A5);
+  Serial.println(sensorReading);
   // map the sensor range (four options):
   // ex: 'long int map(long int, long int, long int, long int, long int)'
 	int range = map(sensorReading, sensorMin, sensorMax, 0, 3);
