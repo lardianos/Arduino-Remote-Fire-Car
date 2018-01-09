@@ -137,11 +137,11 @@ void loop() {
  Serial.println("******* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA *******");
  if(range1==0||range2==0||range3==0||range4==0||range5==0||range6==0||range7==0||range8==0){
     Serial.println("** Close Fire **");    // A fire closer than 1.5 feet away.
-    digitalWrite(Alarm, LOW);
+    digitalWrite(Alarm, HIGH);
  }
  else if(range1==1||range2==1||range3==1||range4==1||range5==1||range6==1||range7==1||range8==1){
     Serial.println("** Distant Fire **");  // A fire between 1-3 feet away.
-    digitalWrite(Alarm, LOW);
+    digitalWrite(Alarm, HIGH);
  }
  else{
     Serial.println("No Fire");
